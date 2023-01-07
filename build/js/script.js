@@ -59,8 +59,7 @@ $(window).on("load", function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4500,
-    dots: false,
+    autoplaySpeed: 2500,
     arrows: true,
     prevArrow:
       '<button type="button" class="prevArrow"><i class="fas fa-angle-left"></i></button>',
