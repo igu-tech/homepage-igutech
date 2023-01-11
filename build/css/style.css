@@ -10000,6 +10000,20 @@ textarea.form-control {
   right: -60px;
 }
 
+.fullscreen-slick:hover {
+  cursor: pointer;
+}
+
+.fullscreen-slick::backdrop {
+  background-color: rgb(255, 255, 255);
+}
+
+.slider-sm .slick-arrow {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+
 .pagination .page-item .page-link {
   display: inline-block;
   width: 48px;

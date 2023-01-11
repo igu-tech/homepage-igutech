@@ -732,6 +732,20 @@ textarea.form-control {
   right: -60px;
 }
 
+.fullscreen-slick:hover {
+  cursor: pointer;
+}
+
+.fullscreen-slick::backdrop {
+  background-color: rgba(255,255,255,1);
+}
+
+.slider-sm .slick-arrow {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+
 // pagination
 .pagination {
   .page-item {

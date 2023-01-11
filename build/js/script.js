@@ -66,6 +66,20 @@ $(window).on("load", function () {
     nextArrow:
       '<button type="button" class="nextArrow"><i class="fas fa-angle-right"></i></button>',
   });
+  
+  const galleries = document.querySelectorAll('.fullscreen-slick');
+  galleries.forEach(gallery => {
+    gallery.addEventListener('click', function(e) {
+      if (!document.fullscreenElement && e.target.classList[0] === 'slick-slide') {
+        e.currentTarget.requestFullscreen().catch(err => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } 
+    });
+  });
+ 
+
+
 
   // videoPopupInit
   function videoPopupInit() {
