@@ -50,6 +50,7 @@ $(window).on("load", function () {
   //post slider
   $(".post-slider").slick({
     slidesToShow: 1,
+    lazyLoad: 'ondemand',
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -71,8 +72,6 @@ $(window).on("load", function () {
     });
   });
  
-
-
 
   // videoPopupInit
   function videoPopupInit() {
