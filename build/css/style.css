@@ -10083,7 +10083,7 @@ textarea.form-control {
 }
 
 .modal-dialog {
-  max-width: 550px;
+  max-width: 1024px;
 }
 
 .applyLoanModal .modal-content {
