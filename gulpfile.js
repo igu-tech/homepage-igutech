@@ -21,6 +21,7 @@ var path = {
     js: "source/js/*.js",
     scss: "source/scss/**/*.scss",
     images: "source/images/**/*.+(png|jpg|gif|svg)",
+    produkte: "source/produkte/**/*.*",
     fonts: "source/fonts/**/*.+(eot|ttf|woff|woff2|otf)",
   },
   build: {
@@ -128,6 +129,18 @@ gulp.task("fonts:build", function () {
     );
 });
 
+// produkte
+gulp.task("produkte:build", function () {
+  return gulp
+    .src(path.src.produkte)
+    .pipe(gulp.dest(path.build.dir + "produkte/"))
+    .pipe(
+      bs.reload({
+        stream: true,
+      })
+    );
+});
+
 // Plugins
 gulp.task("plugins:build", function () {
   return gulp
@@ -158,6 +171,7 @@ gulp.task("watch:build", function () {
   gulp.watch(path.src.js, gulp.series("js:build"));
   gulp.watch(path.src.images, gulp.series("images:build"));
   gulp.watch(path.src.fonts, gulp.series("fonts:build"));
+  gulp.watch(path.src.produkte, gulp.series("produkte:build"));
   gulp.watch(path.src.plugins, gulp.series("plugins:build"));
 });
 
@@ -171,6 +185,7 @@ gulp.task(
     "scss:build",
     "images:build",
     "fonts:build",
+    "produkte:build",
     "plugins:build",
     "others:build",
     gulp.parallel("watch:build", function () {
@@ -197,6 +212,7 @@ gulp.task(
     "scss:build",
     "images:build",
     "fonts:build",
+    "produkte:build",
     "plugins:build"
   )
 );
