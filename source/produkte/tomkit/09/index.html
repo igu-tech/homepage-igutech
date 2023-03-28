@@ -8,19 +8,20 @@
   <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
   <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 </head>
-<body style="padding: 0; margin: 0;" >
+<body style="padding: 0; margin: 0;" >fsddf
 <div id="map" style="width: 100vw; height: 100vh" >
 <script>
   var map = new maplibregl.Map({
     container: 'map',
     style: 'https://storage.googleapis.com/basemaps/styles/basemap-ortho.json', // stylesheet location
     center: [9.588, 47.228], 
-    zoom: 15
+    zoom: 15,
+    preserveDrawingBuffer: true
   });
   map.on('load', () => {
     map.addSource('background', {
       type: 'geojson',
-      data: 'trasse.geojson'
+      data: 'lageplan.geojson'
     });
     map.addLayer({
       'id': 'background',
