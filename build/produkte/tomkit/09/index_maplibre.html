@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tomkit - Lageplan</title>
+  <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+  <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+</head>
+<body style="padding: 0; margin: 0;" >fsddf
+<div id="map" style="width: 100vw; height: 100vh" >
+<script>
+  var map = new maplibregl.Map({
+    container: 'map',
+    style: 'https://storage.googleapis.com/basemaps/styles/basemap-ortho.json', // stylesheet location
+    center: [9.588, 47.228], 
+    zoom: 15,
+    preserveDrawingBuffer: true
+  });
+  map.on('load', () => {
+    map.addSource('background', {
+      type: 'geojson',
+      data: 'lageplan.geojson'
+    });
+    map.addLayer({
+      'id': 'background',
+      'type': 'line',
+      'source': 'background',
+      'paint': {
+      'line-width': 1.5,
+      // 'line-color': ['get', 'color']
+      'line-color': 'white'
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
