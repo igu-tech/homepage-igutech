@@ -12,6 +12,7 @@
 <div id="map" style="width: 100vw; height: 100vh" >
 <script>
   var map = L.map('map').setView([47.228, 9.588], 15);
+  map.attributionControl.setPrefix(false);
   L.tileLayer('https://maps{s}.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg', {
       maxZoom: 22,
       subdomains: ['1','2','3','4'],
