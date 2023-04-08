@@ -1,60 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tomkit - Lageplan</title>
-   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+  <title>Stadttunnel Feldkrich - Lageplan</title>
+  <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+  <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 </head>
 <body style="padding: 0; margin: 0;" >
 <div id="map" style="width: 100vw; height: 100vh" >
 <script>
-  /* global L fetch */
-  var map = L.map('map').setView([47.228, 9.588], 16);
-  map.attributionControl.setPrefix(false);
-  L.tileLayer('https://maps{s}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{z}/{y}/{x}.jpeg', {
-      maxZoom: 21,
-      maxNativeZoom: 19,
-      subdomains: ['1','2','3','4'],
-      attribution: '&copy; <a href="http://www.basemap.at/copyright">Basemap.at</a>'
-  }).addTo(map);
-
-  fetch('lageplan.geojson')
-  .then(res => {
-    res.json()
-    .then(data => {
-      L.geoJSON(data, {
-        style: (feature) => {
-          return {color: '#1E90FF', weight: 1.5};
-        }
-      }).addTo(map);
-      addLayer('https://www.tomkit.at/tomkit/api/sharing/public/baufortschritt?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233');
-    });
+  /* global fetch maplibregl */
+  var map = new maplibregl.Map({
+    container: 'map',
+    style: 'https://storage.googleapis.com/basemaps/styles/basemap-ortho.json',
+    center: [9.585, 47.227], 
+    zoom: 15
+  });
+  map.on('load', () => {
+    addBaselayer();
+    addLayer();
   });
 
-  function addLayer(url) {
-    fetch(url)
-    .then(res => {
-      res.json()
-      .then(data => {
-        var geojson = {"type": "FeatureCollection","features": []};
-        data.forEach(feature => {
-          feature.type ='Feature';
-          feature.geometry = feature.geom;
-          delete feature['geom'];
-          geojson.features.push(feature);
-        });
-        L.geoJSON(geojson, {
-          style: (feature) => {
-            return {color: '#32CD32', weight: 7};
-          }
-        }).addTo(map);
-      });
-    });    
+  function addBaselayer() {
+    map.addSource('lageplan', {
+      type: 'geojson',
+      data: 'lageplan.geojson'
+    });
+    map.addLayer({
+      'id': 'lageplan',
+      'type': 'line',
+      'source': 'lageplan',
+      'paint': {
+        'line-width': 1.5,
+        'line-color': 'white'
+      }
+    });
+    map.addSource('achse', {
+      type: 'geojson',
+      data: 'achse.geojson'
+    });
+    map.addLayer({
+      'id': 'achse',
+      'type': 'line',
+      'source': 'achse',
+      'paint': {
+        'line-width': 10,
+        'line-color': '#1E90FF'
+      },
+      'layout': {
+        'line-cap': 'round'
+      }
+    });
   }
 
+  function addLayer() {
+    fetch('https://www.tomkit.at/tomkit/api/sharing/public/baufortschritt?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=6')
+      .then(res => {
+        res.json()
+          .then(data => {
+            var geojson = {"type": "FeatureCollection","features": []};
+            data.forEach(feature => {
+              feature.type ='Feature';
+              feature.geometry = feature.geom;
+              delete feature['geom'];
+              geojson.features.push(feature);
+            });
+            map.addSource('baufortschritt', {
+              type: 'geojson',
+              data: geojson
+            });
+            map.addLayer({
+              'id': 'baufortschritt',
+              'type': 'line',
+              'source': 'baufortschritt',
+              'paint': {
+                'line-width': 10,
+                'line-color': '#32CD32'
+              },
+              'layout': {
+                'line-cap': 'round'
+              }              
+            });
+          });
+      });      
+  }
 </script>
 
 </body>
