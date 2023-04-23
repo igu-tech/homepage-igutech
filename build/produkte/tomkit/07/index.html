@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="robots" content="noindex,nofollow">
-  <title>Stadttunnel Feldkrich - Lageplan</title>
+  <title>Umfahrung Weyer - Lageplan</title>
   <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
   <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 </head>
@@ -17,7 +17,7 @@
     container: 'map',
     style: 'basemap-ortho.json',
     maxZoom: 19,
-    center: [9.585, 47.227], 
+    center: [14.665, 47.858], 
     zoom: 15
   });
   map.on('load', () => {
@@ -32,34 +32,29 @@
       data: 'lageplan.geojson'
     });
     map.addLayer({
-      'id': 'lageplan',
-      'type': 'line',
-      'source': 'lageplan',
-      'paint': {
-        'line-width': 1.5,
-        'line-color': 'white'
-      }
-    });
-    map.addSource('achse', {
-      type: 'geojson',
-      data: 'achse.geojson'
-    });
-    map.addLayer({
-      'id': 'achse',
-      'type': 'line',
-      'source': 'achse',
-      'paint': {
-        'line-width': 10,
-        'line-color': '#1E90FF'
-      },
-      'layout': {
-        'line-cap': 'round'
-      }
+			"id": "lageplan",
+			"type": "line",
+			"paint": {
+				"line-color": [
+					"get",
+					"farbe"
+				],
+				"line-width": 2,
+				"line-opacity": 0.75
+			},
+			"layout": {
+				"line-cap": "round",
+				"line-join": "round",
+				"visibility": "visible"
+			},
+			"source": "lageplan",
+			"maxzoom": 24,
+			"minzoom": 7
     });
   }
 
   function addLayer() {
-    fetch('https://www.tomkit.at/tomkit/api/sharing/public/baufortschritt?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=6')
+    fetch('https://www.tomkit.at/tomkit/api/sharing/public/baufortschritt?projektnummer=ef997f4a-0d29-4cd9-9b82-1d77247a72a2&fachschale=bau&guid=c530a2c0-8818-4cbc-b202-aa9ddb2220d3')
       .then(res => {
         res.json()
           .then(data => {

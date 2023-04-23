@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex,nofollow">
   <title>Stadttunnel Feldkrich - Lageplan</title>
   <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
   <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
@@ -15,6 +16,7 @@
   var map = new maplibregl.Map({
     container: 'map',
     style: 'basemap-ortho.json',
+    maxZoom: 19,
     center: [9.585, 47.227], 
     zoom: 15
   });
