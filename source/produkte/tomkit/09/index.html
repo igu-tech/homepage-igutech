@@ -10,22 +10,31 @@
   <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 </head>
 <body style="padding: 0; margin: 0;" >
-<div id="map" style="width: 100vw; height: 100vh" >
+<div id="map" style="width: 100vw; height: 100vh" ></div>
+<div id="legend" style="position: absolute; top: 10px;left: 10px; background: #fff; padding: 5px; font-family: Arial, sans-serif; border-radius: 3px;" ></div>
 <script>
   /* global fetch maplibregl */
   var map = new maplibregl.Map({
     container: 'map',
     style: 'basemap-ortho.json',
     maxZoom: 19,
-    center: [9.585, 47.227], 
-    zoom: 15
+    center: [9.585, 47.2255], 
+    zoom: 15,
+    attribution: 'Your custom attribution'
   });
   map.on('load', () => {
     addBaselayer();
     addLayer();
+    addLegend();
+    map.fitBounds([
+      [9.577073,47.221409], 
+      [9.590948,47.229860] 
+    ]);
   });
   map.addControl(new maplibregl.NavigationControl());
   map.addControl(new maplibregl.ScaleControl({position: 'bottom-right'}));
+  map.addControl(new maplibregl.AttributionControl({customAttribution: '© basemap.at'}));
+
   function addBaselayer() {
     map.addSource('lageplan', {
       type: 'geojson',
@@ -87,7 +96,26 @@
               }              
             });
           });
-      });      
+      })
+      .catch(err => {
+        console.log(err.description);
+      });
+  }
+  
+  function addLegend() {
+    fetch('https://www.tomkit.at/tomkit/api/sharing/public/version?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=6')
+      .then(res => {
+        res.json()
+          .then(data => {
+            if (data && data.length) {
+              var version = new Intl.DateTimeFormat('de-DE').format(new Date(data[0].zeitpunkt))
+              document.getElementById('legend').innerHTML = 'letzte Aktualisierung: ' + version;
+            }
+          });
+      })
+      .catch(err => {
+        console.log(err.description);
+      });
   }
 </script>
 
