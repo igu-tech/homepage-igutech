@@ -108,8 +108,7 @@
         res.json()
           .then(data => {
             if (data && data.length) {
-              var version = new Intl.DateTimeFormat('de-DE').format(new Date(data[0].zeitpunkt))
-              document.getElementById('legend').innerHTML = 'letzte Aktualisierung: ' + version;
+              document.getElementById('legend').innerHTML = 'letzte Aktualisierung: ' + data[0].version;
             }
           });
       })
