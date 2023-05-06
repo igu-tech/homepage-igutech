@@ -11,16 +11,15 @@
 </head>
 <body style="padding: 0; margin: 0;" >
 <div id="map" style="width: 100vw; height: 100vh" ></div>
-<div id="legend" style="position: absolute; top: 10px;left: 10px; background: #fff; padding: 5px; font-family: Arial, sans-serif; font-size: 16px; border-radius: 3px;" ></div>
+<div id="legend" style="position: absolute; top: 10px;left: 10px; background: hsla(0,0%,100%,.75); padding: 5px; font-family: Arial, sans-serif; font-size: 15px; border-radius: 3px;" ></div>
 <script>
   /* global fetch maplibregl */
   var map = new maplibregl.Map({
     container: 'map',
     style: 'basemap-ortho.json',
-    maxZoom: 19,
+    maxZoom: 22,
     center: [9.585, 47.2255], 
-    zoom: 15,
-    attribution: 'Your custom attribution'
+    zoom: 15
   });
   map.on('load', () => {
     addBaselayer();
@@ -33,7 +32,7 @@
   });
   map.addControl(new maplibregl.NavigationControl());
   map.addControl(new maplibregl.ScaleControl({position: 'bottom-right'}));
-  map.addControl(new maplibregl.AttributionControl({customAttribution: '<a href="https://www.igutech.com" target="_blank">powererd by IGUTech</a>'}));
+  map.addControl(new maplibregl.AttributionControl({customAttribution: '<a href="https://www.igutech.com/build/tomkit.html" target="_blank">powered by TOMKIT</a>'}));
 
   function addBaselayer() {
     map.addSource('lageplan', {
