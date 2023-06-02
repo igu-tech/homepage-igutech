@@ -29,9 +29,8 @@
       [9.577073,47.221409], 
       [9.592, 47.2310] 
     ]);
-    setTimeout(() => { 
-      this.map.resize();
-    }, 1000);
+    setTimeout(() => { this.map.resize() }, 100);
+    setTimeout(() => { this.map.resize() }, 1000);
   });
   map.addControl(new maplibregl.NavigationControl());
   map.addControl(new maplibregl.ScaleControl({position: 'bottom-right'}));
