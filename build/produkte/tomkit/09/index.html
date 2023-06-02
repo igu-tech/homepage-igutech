@@ -68,7 +68,7 @@
   }
 
   function addLayer() {
-    fetch('https://www.tomkit.at/tomkit/api/sharing/public/baufortschritt?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=6')
+    fetch('https://www.tomkit.at/tomkit/api/sharing/public/baufortschritt?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=3600')
       .then(res => {
         res.json()
           .then(data => {
@@ -103,7 +103,7 @@
   }
   
   function addLegend() {
-    fetch('https://www.tomkit.at/tomkit/api/sharing/public/version?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=6')
+    fetch('https://www.tomkit.at/tomkit/api/sharing/public/version?projektnummer=251a46c9-4f5d-477f-be5d-d86de20e9bd1&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=3600')
       .then(res => {
         res.json()
           .then(data => {
