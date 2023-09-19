@@ -33,10 +33,43 @@
   map.addControl(new maplibregl.ScaleControl({position: 'bottom-right'}));
 
   function addBaselayer() {
+    
+    map.addSource('baulose', {
+      type: 'geojson',
+      data: 'baulose.geojson'
+    });    
+    map.addLayer({
+			"id": "baulose",
+			"type": "fill",
+			"paint": {
+				"fill-color": [
+					"match",
+					[
+						"get",
+						"Baulos"
+					],
+					1,
+					"#ff3300",
+					2,
+					"#00ffff",
+					3,
+					"#ff9900",
+					"white"
+				],
+				"fill-opacity": 0.25,
+				"fill-outline-color": "black"
+			},
+			"layout": {
+				"visibility": "visible"
+			},
+			"source": "baulose",
+			"minzoom": 8
+    });
+    
     map.addSource('maste', {
       type: 'geojson',
       data: 'maste.geojson'
-    });
+    });    
     map.addLayer({
 			"id": "maste",
 			"type": "circle",
@@ -105,7 +138,7 @@
 				"visibility": "visible"
 			},
 			"source": "zufahrten",
-			"minzoom": 11
+			"minzoom": 10
     });
 
     map.addLayer({
@@ -133,6 +166,34 @@
 			"source": "maste",
 			"minzoom": 13
     });
+    
+    map.addLayer({
+			"id": "baulose_label",
+			"type": "symbol",
+			"paint": {
+				"text-color": "black",
+				"text-halo-color": "white",
+				"text-halo-width": 2
+			},
+			"layout": {
+				"text-font": [
+					"Open Sans Regular"
+				],
+				"text-size": 20,
+				"text-field": "{Baulos}",
+				"visibility": "visible",
+				"text-anchor": "bottom-left",
+				"text-offset": [
+					0.5,
+					-0.5
+				],
+				"symbol-placement": "point"
+			},
+			"source": "baulose",
+			"minzoom": 8,
+			"maxzoom": 12
+    });    
+
   }
 
 </script>
