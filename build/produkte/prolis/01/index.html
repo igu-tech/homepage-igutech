@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Salzburgleitung - Lageplan</title>
+  <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+  <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+</head>
+<body style="padding: 0; margin: 0;" >
+<div id="map" style="width: 100vw; height: 100vh" ></div>
+<div id="legend" style="position: absolute; top: 10px;left: 10px; background: hsla(0,0%,100%,.75); padding: 5px; font-family: Arial, sans-serif; font-size: 15px; border-radius: 3px;" ></div>
+<script>
+  /* global fetch maplibregl */
+  var map = new maplibregl.Map({
+    container: 'map',
+    style: 'basemap-ortho.json',
+    maxZoom: 22,
+    center: [13.037802242021087, 47.571268643876806], 
+    zoom: 10
+  });
+  map.on('load', () => {
+    addBaselayer();
+    map.resize(); 
+    map.fitBounds([
+      [12.644216505360305, 47.24111224820743], 
+      [13.4424749008368, 47.92536588975807] 
+    ]);
+  });
+  map.addControl(new maplibregl.NavigationControl());
+  map.addControl(new maplibregl.ScaleControl({position: 'bottom-right'}));
+
+  function addBaselayer() {
+    map.addSource('maste', {
+      type: 'geojson',
+      data: 'maste.geojson'
+    });
+    map.addLayer({
+			"id": "maste",
+			"type": "circle",
+			"paint": {
+				"circle-color": "white",
+				"circle-radius": {
+					"stops": [
+						[
+							10,
+							1.5
+						],
+						[
+							13,
+							3
+						],
+						[
+							16,
+							5
+						]
+					]
+				},
+				"circle-opacity": 0.85,
+				"circle-stroke-color": [
+					"case",
+					[
+						"==",
+						[
+							"slice",
+							[
+								"get",
+								"praefix"
+							],
+							0,
+							1
+						],
+						"1"
+					],
+					"blue",
+					"green"
+				],
+				"circle-stroke-width": 3
+			},
+			"layout": {
+				"visibility": "visible"
+			},
+			"source": "maste",
+			"minzoom": 8
+    });
+    
+    map.addSource('zufahrten', {
+      type: 'geojson',
+      data: 'zufahrten.geojson'
+    });
+    map.addLayer({
+			"id": "zufahrten",
+			"type": "line",
+			"paint": {
+				"line-color": [
+					"get",
+					"farbe"
+				],
+				"line-width": 3,
+				"line-opacity": 1
+			},
+			"layout": {
+				"visibility": "visible"
+			},
+			"source": "zufahrten",
+			"minzoom": 11
+    });
+
+    map.addLayer({
+			"id": "maste_label",
+			"type": "symbol",
+			"paint": {
+				"text-color": "black",
+				"text-halo-color": "white",
+				"text-halo-width": 2
+			},
+			"layout": {
+				"text-font": [
+					"Open Sans Regular"
+				],
+				"text-size": 14,
+				"text-field": "{name}",
+				"visibility": "visible",
+				"text-anchor": "bottom-left",
+				"text-offset": [
+					0.5,
+					-0.5
+				],
+				"symbol-placement": "point"
+			},
+			"source": "maste",
+			"minzoom": 13
+    });
+  }
+
+</script>
+
+</body>
+</html>
