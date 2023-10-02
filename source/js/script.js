@@ -1,6 +1,16 @@
 // Preloader js
+/*global $*/
 $(window).on("load", function () {
   "use strict";
+  let searchParams = new URLSearchParams(window.location.search);
+  let language = searchParams.get('lang') || window.navigator.language.substring(0,2);
+  if (language === 'en') {
+    $('.de').hide();
+    $('.en').show();
+  } else {
+    $('.en').hide();
+    $('.de').show();
+  }
   $(".preloader").fadeOut(0);
 });
 

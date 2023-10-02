@@ -10089,4 +10089,12 @@ textarea.form-control {
 .applyLoanModal .modal-content {
   padding: 10px;
 }
+
+.de {
+  display: none;
+}
+
+.en {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
