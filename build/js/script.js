@@ -19,6 +19,12 @@ $(window).on("load", function () {
     $('.de').show();
   }
   $(".preloader").fadeOut(0);
+  if (window.location.href === 'https://www.igutech.com/build/index.html?lang=en') {
+    document.head.innerHTML += '<link rel="canonical" href="https://www.igutech.com/build/index.html" />';
+  }
+  if (window.location.href === 'https://www.igutech.com/build/about-franz-gusenbauer.html?lang=en') {
+    document.head.innerHTML += '<link rel="canonical" href="https://www.igutech.com/build/about-franz-gusenbauer.html" />';
+  }
 });
 
 (function ($) {
