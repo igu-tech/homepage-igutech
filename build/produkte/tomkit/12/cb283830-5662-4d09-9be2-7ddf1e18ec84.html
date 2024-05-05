@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="robots" content="noindex,nofollow">
-  <title>S10 Mühlviertler Schnellstraße Freistadt Nord – Rainbach Nord</title>
+  <title>Pumpspeicherkarftwerk Ebensee</title>
   <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
   <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 </head>
@@ -18,7 +18,7 @@
     container: 'map',
     style: 'basemap-ortho.json',
     maxZoom: 22,
-    center: [9.585, 47.2255], 
+    center: [13.77431262390374, 47.82191775630062], 
     zoom: 15
   });
   map.on('load', () => {
@@ -27,8 +27,8 @@
     addLegend();
     map.resize(); 
     map.fitBounds([
-      [9.577073,47.221409], 
-      [9.592, 47.2310] 
+      [13.753344237879617, 47.814579267221234], 
+      [13.793428679045292, 47.8293298209536] 
     ]);
   });
   map.addControl(new maplibregl.NavigationControl());
@@ -49,22 +49,6 @@
         'line-color': 'white'
       }
     });
-    map.addSource('achse', {
-      type: 'geojson',
-      data: 'achse.geojson'
-    });
-    map.addLayer({
-      'id': 'achse',
-      'type': 'line',
-      'source': 'achse',
-      'paint': {
-        'line-width': 10,
-        'line-color': '#1E90FF'
-      },
-      'layout': {
-        'line-cap': 'round'
-      }
-    });
   }
 
   function addLayer() {
@@ -73,7 +57,7 @@
         res.json()
           .then(data => {
             var geojson = {"type": "FeatureCollection","features": []};
-            data.forEach(feature => {
+            data.filter(feature => feature.id !== 454868).forEach(feature => {
               feature.type ='Feature';
               feature.geometry = feature.geom;
               delete feature['geom'];
