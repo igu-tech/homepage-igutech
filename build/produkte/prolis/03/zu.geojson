@@ -7,6 +7,133 @@
                 "type": "LineString",
                 "coordinates": [
                     [
+                        14.36722594,
+                        48.25368531
+                    ],
+                    [
+                        14.36721892,
+                        48.25362437
+                    ],
+                    [
+                        14.36717728,
+                        48.2535008
+                    ],
+                    [
+                        14.36713275,
+                        48.25337726
+                    ],
+                    [
+                        14.36706334,
+                        48.25323729
+                    ],
+                    [
+                        14.36700731,
+                        48.25311822
+                    ],
+                    [
+                        14.36681579,
+                        48.2528863
+                    ],
+                    [
+                        14.36672617,
+                        48.25282279
+                    ],
+                    [
+                        14.36650644,
+                        48.25254739
+                    ],
+                    [
+                        14.36641957,
+                        48.25242596
+                    ],
+                    [
+                        14.36633433,
+                        48.25222671
+                    ],
+                    [
+                        14.36622742,
+                        48.25196427
+                    ],
+                    [
+                        14.36620622,
+                        48.25171932
+                    ],
+                    [
+                        14.36621751,
+                        48.25154582
+                    ],
+                    [
+                        14.36631775,
+                        48.25085916
+                    ],
+                    [
+                        14.3663477,
+                        48.25040275
+                    ],
+                    [
+                        14.36633,
+                        48.25015702
+                    ],
+                    [
+                        14.36634522,
+                        48.25006214
+                    ],
+                    [
+                        14.3662938,
+                        48.24974114
+                    ],
+                    [
+                        14.36627232,
+                        48.24964022
+                    ],
+                    [
+                        14.36621786,
+                        48.24938368
+                    ],
+                    [
+                        14.36616045,
+                        48.24912665
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 310903,
+                "code": "0116",
+                "name": "0116 - Biberweg",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 524.44,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0116 - Biberweg",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
                         14.52696113,
                         48.20933903
                     ],
@@ -1338,6 +1465,93 @@
                 "ausgeschrieben": false,
                 "komponententyp": "Zufahrten Neubaumasten",
                 "vertragsstatus": "abgeschlossen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.36616049,
+                        48.2491295
+                    ],
+                    [
+                        14.36617779,
+                        48.24909323
+                    ],
+                    [
+                        14.36621442,
+                        48.24907196
+                    ],
+                    [
+                        14.36628529,
+                        48.24905048
+                    ],
+                    [
+                        14.36643934,
+                        48.24901429
+                    ],
+                    [
+                        14.36684548,
+                        48.24892513
+                    ],
+                    [
+                        14.36725173,
+                        48.2488359
+                    ],
+                    [
+                        14.36748795,
+                        48.2487857
+                    ],
+                    [
+                        14.36753239,
+                        48.24877627
+                    ],
+                    [
+                        14.36883664,
+                        48.24845972
+                    ],
+                    [
+                        14.3697543,
+                        48.24826527
+                    ],
+                    [
+                        14.37086268,
+                        48.24806143
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 310910,
+                "code": "0123",
+                "name": "0123 - Falterweg",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 371.09,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0123 - Falterweg",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
                 "beweisgesichert": false
             }
         },
@@ -3478,6 +3692,141 @@
                 "type": "LineString",
                 "coordinates": [
                     [
+                        14.36512624,
+                        48.25447345
+                    ],
+                    [
+                        14.36503146,
+                        48.25454425
+                    ],
+                    [
+                        14.3648144,
+                        48.25464756
+                    ],
+                    [
+                        14.3646373,
+                        48.25476526
+                    ],
+                    [
+                        14.36438586,
+                        48.25497262
+                    ],
+                    [
+                        14.36429279,
+                        48.2551054
+                    ],
+                    [
+                        14.36427897,
+                        48.25514184
+                    ],
+                    [
+                        14.36426516,
+                        48.25517814
+                    ],
+                    [
+                        14.36425754,
+                        48.25527785
+                    ],
+                    [
+                        14.3642734,
+                        48.2554398
+                    ],
+                    [
+                        14.36424846,
+                        48.25560688
+                    ],
+                    [
+                        14.3642495,
+                        48.25578488
+                    ],
+                    [
+                        14.36426363,
+                        48.25586086
+                    ],
+                    [
+                        14.36432604,
+                        48.2559615
+                    ],
+                    [
+                        14.36444579,
+                        48.25612811
+                    ],
+                    [
+                        14.3645596,
+                        48.25621923
+                    ],
+                    [
+                        14.36457226,
+                        48.25622935
+                    ],
+                    [
+                        14.36490225,
+                        48.25658169
+                    ],
+                    [
+                        14.36547042,
+                        48.25700901
+                    ],
+                    [
+                        14.36572181,
+                        48.2571561
+                    ],
+                    [
+                        14.36577178,
+                        48.25717469
+                    ],
+                    [
+                        14.36579617,
+                        48.25719172
+                    ],
+                    [
+                        14.3657957,
+                        48.25721254
+                    ],
+                    [
+                        14.3657843,
+                        48.25723073
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 310951,
+                "code": "0168",
+                "name": "0168 - Auhirschgasse",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 372.65,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0168 - Auhirschgasse",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
                         14.45452167,
                         48.12426898
                     ],
@@ -4448,6 +4797,141 @@
                 "type": "LineString",
                 "coordinates": [
                     [
+                        14.37127063,
+                        48.26028937
+                    ],
+                    [
+                        14.37125104,
+                        48.26036233
+                    ],
+                    [
+                        14.37121624,
+                        48.2604259
+                    ],
+                    [
+                        14.37108988,
+                        48.26053548
+                    ],
+                    [
+                        14.37087978,
+                        48.26070505
+                    ],
+                    [
+                        14.37061721,
+                        48.26092028
+                    ],
+                    [
+                        14.37036936,
+                        48.26111981
+                    ],
+                    [
+                        14.37014653,
+                        48.26129251
+                    ],
+                    [
+                        14.37000236,
+                        48.2614138
+                    ],
+                    [
+                        14.36978867,
+                        48.26159244
+                    ],
+                    [
+                        14.36963934,
+                        48.26171879
+                    ],
+                    [
+                        14.369536,
+                        48.2618141
+                    ],
+                    [
+                        14.36947326,
+                        48.2618724
+                    ],
+                    [
+                        14.36931857,
+                        48.26203143
+                    ],
+                    [
+                        14.36921067,
+                        48.26212428
+                    ],
+                    [
+                        14.3690837,
+                        48.26220373
+                    ],
+                    [
+                        14.36901585,
+                        48.26226961
+                    ],
+                    [
+                        14.36894526,
+                        48.26238571
+                    ],
+                    [
+                        14.3688831,
+                        48.26247262
+                    ],
+                    [
+                        14.36880412,
+                        48.26254613
+                    ],
+                    [
+                        14.36871026,
+                        48.26258965
+                    ],
+                    [
+                        14.36862632,
+                        48.26260295
+                    ],
+                    [
+                        14.36853379,
+                        48.26260077
+                    ],
+                    [
+                        14.36838946,
+                        48.26256516
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 1103508,
+                "code": "0404",
+                "name": "0404 - Zufahrt Kabelstrecke",
+                "farbe": "#9900ff",
+                "maste": "",
+                "laenge": 346.15,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0404 - Zufahrt Kabelstrecke",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Güterweg",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
                         14.34553509,
                         48.26783173
                     ],
@@ -5310,6 +5794,105 @@
                 "eingereicht": false,
                 "rueckgebaut": false,
                 "zufahrtstyp": "Feldweg",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.36512624,
+                        48.25447345
+                    ],
+                    [
+                        14.36517603,
+                        48.25445087
+                    ],
+                    [
+                        14.36523459,
+                        48.25443964
+                    ],
+                    [
+                        14.36530022,
+                        48.25444244
+                    ],
+                    [
+                        14.36542178,
+                        48.25445353
+                    ],
+                    [
+                        14.36566479,
+                        48.25445432
+                    ],
+                    [
+                        14.36592924,
+                        48.25441494
+                    ],
+                    [
+                        14.36624654,
+                        48.25433065
+                    ],
+                    [
+                        14.36655005,
+                        48.25421936
+                    ],
+                    [
+                        14.36676985,
+                        48.25411773
+                    ],
+                    [
+                        14.36690818,
+                        48.2540362
+                    ],
+                    [
+                        14.36706083,
+                        48.25392429
+                    ],
+                    [
+                        14.36716471,
+                        48.25382489
+                    ],
+                    [
+                        14.36722243,
+                        48.25372698
+                    ],
+                    [
+                        14.36722594,
+                        48.25368531
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 310983,
+                "code": "0200",
+                "name": "0200 - Traundorfer Straße",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 192.44,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0200 - Traundorfer Straße",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
                 "kategorie_id": [
                     270337
                 ],
@@ -7192,6 +7775,261 @@
                 "kontakt": null,
                 "praefix": "",
                 "primaer": "ZU-NM.0207 - UW-Zufahrt VHS",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.37656021,
+                        48.25595478
+                    ],
+                    [
+                        14.37664622,
+                        48.25586641
+                    ],
+                    [
+                        14.37670041,
+                        48.25572696
+                    ],
+                    [
+                        14.37675344,
+                        48.25567127
+                    ],
+                    [
+                        14.38033455,
+                        48.25423471
+                    ],
+                    [
+                        14.38040921,
+                        48.25419901
+                    ],
+                    [
+                        14.38046023,
+                        48.2541656
+                    ],
+                    [
+                        14.38047525,
+                        48.25412738
+                    ],
+                    [
+                        14.38042914,
+                        48.25406784
+                    ],
+                    [
+                        14.38019665,
+                        48.25383926
+                    ],
+                    [
+                        14.3790361,
+                        48.25255726
+                    ],
+                    [
+                        14.37865341,
+                        48.25217049
+                    ],
+                    [
+                        14.37849242,
+                        48.25196256
+                    ],
+                    [
+                        14.378329,
+                        48.25163567
+                    ],
+                    [
+                        14.37833774,
+                        48.25136433
+                    ],
+                    [
+                        14.37839519,
+                        48.25103544
+                    ],
+                    [
+                        14.37869361,
+                        48.2506425
+                    ],
+                    [
+                        14.37908715,
+                        48.25037243
+                    ],
+                    [
+                        14.38138413,
+                        48.24944737
+                    ],
+                    [
+                        14.38245866,
+                        48.24902832
+                    ],
+                    [
+                        14.38245301,
+                        48.2489169
+                    ],
+                    [
+                        14.38254358,
+                        48.24881613
+                    ],
+                    [
+                        14.38167232,
+                        48.24785525
+                    ],
+                    [
+                        14.3810739,
+                        48.24716112
+                    ],
+                    [
+                        14.38092716,
+                        48.24695306
+                    ],
+                    [
+                        14.38085014,
+                        48.24686221
+                    ],
+                    [
+                        14.38077829,
+                        48.24664032
+                    ],
+                    [
+                        14.38075265,
+                        48.24643116
+                    ],
+                    [
+                        14.38079026,
+                        48.24617859
+                    ],
+                    [
+                        14.38093404,
+                        48.24589174
+                    ],
+                    [
+                        14.38118352,
+                        48.24554683
+                    ],
+                    [
+                        14.38129987,
+                        48.24531258
+                    ],
+                    [
+                        14.38136616,
+                        48.24506927
+                    ],
+                    [
+                        14.38133771,
+                        48.24472213
+                    ],
+                    [
+                        14.38117363,
+                        48.24436194
+                    ],
+                    [
+                        14.38057889,
+                        48.24349645
+                    ],
+                    [
+                        14.37925477,
+                        48.2421474
+                    ],
+                    [
+                        14.37884121,
+                        48.24177995
+                    ],
+                    [
+                        14.37855328,
+                        48.24163503
+                    ],
+                    [
+                        14.37795214,
+                        48.24150247
+                    ],
+                    [
+                        14.37678847,
+                        48.24138452
+                    ],
+                    [
+                        14.37598505,
+                        48.24126235
+                    ],
+                    [
+                        14.37550334,
+                        48.24110972
+                    ],
+                    [
+                        14.37531553,
+                        48.24100028
+                    ],
+                    [
+                        14.37512156,
+                        48.24069051
+                    ],
+                    [
+                        14.3751152,
+                        48.24037647
+                    ],
+                    [
+                        14.37528921,
+                        48.23947069
+                    ],
+                    [
+                        14.37524934,
+                        48.23890949
+                    ],
+                    [
+                        14.37506751,
+                        48.23837337
+                    ],
+                    [
+                        14.37537504,
+                        48.23663586
+                    ],
+                    [
+                        14.3754207,
+                        48.23631806
+                    ],
+                    [
+                        14.37549038,
+                        48.23602849
+                    ],
+                    [
+                        14.3754639,
+                        48.23578566
+                    ],
+                    [
+                        14.37478342,
+                        48.23489712
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 310992,
+                "code": "0209",
+                "name": "0209 - UW-Zufahrt VPN",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 3012.36,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0209 - UW-Zufahrt VPN",
                 "erhalter": null,
                 "rueckbau": false,
                 "bemerkung": "",
@@ -9698,6 +10536,81 @@
                 "type": "LineString",
                 "coordinates": [
                     [
+                        14.36925524,
+                        48.26208594
+                    ],
+                    [
+                        14.36932852,
+                        48.26213326
+                    ],
+                    [
+                        14.36938702,
+                        48.26216336
+                    ],
+                    [
+                        14.36948468,
+                        48.26219662
+                    ],
+                    [
+                        14.3696026,
+                        48.26222769
+                    ],
+                    [
+                        14.36973176,
+                        48.26225665
+                    ],
+                    [
+                        14.36984802,
+                        48.2622797
+                    ],
+                    [
+                        14.37004849,
+                        48.26234015
+                    ],
+                    [
+                        14.37014561,
+                        48.26238722
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 1240852,
+                "code": "0406",
+                "name": "0406 - Stichweg Kabelstrecke 2",
+                "farbe": "#bf9000",
+                "maste": "",
+                "laenge": 74.97,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0406 - Stichweg Kabelstrecke 2",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Feldweg",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
                         14.52762216,
                         48.21058569
                     ],
@@ -9887,6 +10800,241 @@
                 "eingereicht": false,
                 "rueckgebaut": false,
                 "zufahrtstyp": "Güterweg",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.36579618,
+                        48.25719174
+                    ],
+                    [
+                        14.36583346,
+                        48.25719589
+                    ],
+                    [
+                        14.36595445,
+                        48.25723096
+                    ],
+                    [
+                        14.36617262,
+                        48.25731284
+                    ],
+                    [
+                        14.36655252,
+                        48.25747411
+                    ],
+                    [
+                        14.36671061,
+                        48.25755904
+                    ],
+                    [
+                        14.36694972,
+                        48.25771053
+                    ],
+                    [
+                        14.36714184,
+                        48.25791765
+                    ],
+                    [
+                        14.36728669,
+                        48.25809207
+                    ],
+                    [
+                        14.36741282,
+                        48.25823251
+                    ],
+                    [
+                        14.36754752,
+                        48.25835079
+                    ],
+                    [
+                        14.36756972,
+                        48.25840783
+                    ],
+                    [
+                        14.36754403,
+                        48.25847633
+                    ],
+                    [
+                        14.36750015,
+                        48.25861228
+                    ],
+                    [
+                        14.3674765,
+                        48.25878218
+                    ],
+                    [
+                        14.36747311,
+                        48.25891274
+                    ],
+                    [
+                        14.36750105,
+                        48.25903098
+                    ],
+                    [
+                        14.3675673,
+                        48.2591097
+                    ],
+                    [
+                        14.36767718,
+                        48.25919005
+                    ],
+                    [
+                        14.36788695,
+                        48.25930263
+                    ],
+                    [
+                        14.36807802,
+                        48.25938225
+                    ],
+                    [
+                        14.36827364,
+                        48.25946383
+                    ],
+                    [
+                        14.3684385,
+                        48.25951155
+                    ],
+                    [
+                        14.36866176,
+                        48.2595467
+                    ],
+                    [
+                        14.36880929,
+                        48.25955541
+                    ],
+                    [
+                        14.36904358,
+                        48.25954126
+                    ],
+                    [
+                        14.36917733,
+                        48.25953705
+                    ],
+                    [
+                        14.36938067,
+                        48.2595543
+                    ],
+                    [
+                        14.36958603,
+                        48.25959663
+                    ],
+                    [
+                        14.36972832,
+                        48.25964355
+                    ],
+                    [
+                        14.36983067,
+                        48.25972296
+                    ],
+                    [
+                        14.36995015,
+                        48.25983133
+                    ],
+                    [
+                        14.37004077,
+                        48.2599259
+                    ],
+                    [
+                        14.37014599,
+                        48.25999825
+                    ],
+                    [
+                        14.37023737,
+                        48.26005567
+                    ],
+                    [
+                        14.37036162,
+                        48.26010275
+                    ],
+                    [
+                        14.37050969,
+                        48.26013756
+                    ],
+                    [
+                        14.37068311,
+                        48.26016211
+                    ],
+                    [
+                        14.3708533,
+                        48.26017564
+                    ],
+                    [
+                        14.37102209,
+                        48.2601942
+                    ],
+                    [
+                        14.37117205,
+                        48.26024807
+                    ],
+                    [
+                        14.37127062,
+                        48.26028936
+                    ],
+                    [
+                        14.37135945,
+                        48.26029458
+                    ],
+                    [
+                        14.37148088,
+                        48.26027642
+                    ],
+                    [
+                        14.37162653,
+                        48.26026607
+                    ],
+                    [
+                        14.37179679,
+                        48.26028261
+                    ],
+                    [
+                        14.37195536,
+                        48.26031633
+                    ],
+                    [
+                        14.37210357,
+                        48.26035817
+                    ],
+                    [
+                        14.37223403,
+                        48.26037159
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 1103507,
+                "code": "0403",
+                "name": "0403 - Auhirschgasse",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 667.96,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0403 - Auhirschgasse",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
                 "kategorie_id": [
                     270337
                 ],
@@ -11017,6 +12165,209 @@
                 "kontakt": null,
                 "praefix": "",
                 "primaer": "ZU-NM.0165 - Lunzerstraße",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.37086268,
+                        48.24806143
+                    ],
+                    [
+                        14.37090916,
+                        48.24803708
+                    ],
+                    [
+                        14.37094407,
+                        48.24800155
+                    ],
+                    [
+                        14.37094427,
+                        48.24794063
+                    ],
+                    [
+                        14.37081984,
+                        48.24757502
+                    ],
+                    [
+                        14.37079797,
+                        48.24738255
+                    ],
+                    [
+                        14.37081534,
+                        48.24719004
+                    ],
+                    [
+                        14.37076248,
+                        48.24702662
+                    ],
+                    [
+                        14.37061491,
+                        48.24680382
+                    ],
+                    [
+                        14.37057806,
+                        48.24669751
+                    ],
+                    [
+                        14.3705509,
+                        48.24664034
+                    ],
+                    [
+                        14.37005224,
+                        48.24529364
+                    ],
+                    [
+                        14.36999664,
+                        48.24514991
+                    ],
+                    [
+                        14.3699522,
+                        48.24505493
+                    ],
+                    [
+                        14.36988554,
+                        48.24493617
+                    ],
+                    [
+                        14.36978602,
+                        48.24476618
+                    ],
+                    [
+                        14.36960856,
+                        48.24458777
+                    ],
+                    [
+                        14.3695114,
+                        48.24448535
+                    ],
+                    [
+                        14.36941344,
+                        48.24440371
+                    ],
+                    [
+                        14.36928938,
+                        48.2443087
+                    ],
+                    [
+                        14.36916166,
+                        48.24422395
+                    ],
+                    [
+                        14.36911611,
+                        48.24419669
+                    ],
+                    [
+                        14.3690106,
+                        48.24413347
+                    ],
+                    [
+                        14.3688496,
+                        48.24404991
+                    ],
+                    [
+                        14.36867599,
+                        48.24397161
+                    ],
+                    [
+                        14.3685041,
+                        48.24389757
+                    ],
+                    [
+                        14.36796943,
+                        48.24368851
+                    ],
+                    [
+                        14.36771564,
+                        48.24359718
+                    ],
+                    [
+                        14.36737428,
+                        48.24348783
+                    ],
+                    [
+                        14.36735602,
+                        48.24348387
+                    ],
+                    [
+                        14.36721645,
+                        48.24345344
+                    ],
+                    [
+                        14.36709745,
+                        48.24344859
+                    ],
+                    [
+                        14.36691969,
+                        48.24343986
+                    ],
+                    [
+                        14.36677636,
+                        48.24341126
+                    ],
+                    [
+                        14.36648639,
+                        48.24335823
+                    ],
+                    [
+                        14.36513382,
+                        48.24304106
+                    ],
+                    [
+                        14.36449661,
+                        48.24290605
+                    ],
+                    [
+                        14.3637227,
+                        48.24279166
+                    ],
+                    [
+                        14.36337947,
+                        48.24269576
+                    ],
+                    [
+                        14.36306161,
+                        48.24257472
+                    ],
+                    [
+                        14.36204251,
+                        48.24214632
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 310954,
+                "code": "0171",
+                "name": "0171 - Oidener Straße",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 1041.22,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0171 - Oidener Straße",
                 "erhalter": null,
                 "rueckbau": false,
                 "bemerkung": "",
@@ -13004,6 +14355,65 @@
                 "type": "LineString",
                 "coordinates": [
                     [
+                        14.36838946,
+                        48.26256516
+                    ],
+                    [
+                        14.36839213,
+                        48.26264145
+                    ],
+                    [
+                        14.3684008,
+                        48.26273626
+                    ],
+                    [
+                        14.36840217,
+                        48.2628226
+                    ],
+                    [
+                        14.36840917,
+                        48.26287632
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 1103509,
+                "code": "0405",
+                "name": "0405 - Stichweg Kabelstrecke 1",
+                "farbe": "#bf9000",
+                "maste": "",
+                "laenge": 34.65,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0405 - Stichweg Kabelstrecke 1",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Feldweg",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
                         14.46394268,
                         48.1795618
                     ],
@@ -13684,6 +15094,69 @@
                 "ausgeschrieben": false,
                 "komponententyp": "Zufahrten Neubaumasten",
                 "vertragsstatus": "abgeschlossen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.37223402,
+                        48.26037157
+                    ],
+                    [
+                        14.37236667,
+                        48.26036099
+                    ],
+                    [
+                        14.37247762,
+                        48.26034763
+                    ],
+                    [
+                        14.37261404,
+                        48.26032451
+                    ],
+                    [
+                        14.37273006,
+                        48.26033036
+                    ],
+                    [
+                        14.37248445,
+                        48.26055606
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 311173,
+                "code": "0390",
+                "name": "0390 - Bohrung Kabel Pichling",
+                "farbe": "#bf9000",
+                "maste": "",
+                "laenge": 68.41,
+                "neubau": false,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0390 - Bohrung Kabel Pichling",
+                "erhalter": null,
+                "rueckbau": false,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Feldweg",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
                 "beweisgesichert": false
             }
         },
@@ -15700,6 +17173,319 @@
                 "eingereicht": false,
                 "rueckgebaut": false,
                 "zufahrtstyp": "Güterweg",
+                "kategorie_id": [
+                    270337
+                ],
+                "betriebsphase": "offen",
+                "ausgeschrieben": false,
+                "komponententyp": "Zufahrten Neubaumasten",
+                "vertragsstatus": "offen",
+                "beweisgesichert": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        14.3657843,
+                        48.25723073
+                    ],
+                    [
+                        14.36577006,
+                        48.25725044
+                    ],
+                    [
+                        14.36574649,
+                        48.25728342
+                    ],
+                    [
+                        14.36570995,
+                        48.25733064
+                    ],
+                    [
+                        14.36567108,
+                        48.25737817
+                    ],
+                    [
+                        14.36562512,
+                        48.25744076
+                    ],
+                    [
+                        14.36560027,
+                        48.25747385
+                    ],
+                    [
+                        14.36556628,
+                        48.25751775
+                    ],
+                    [
+                        14.36552529,
+                        48.25757143
+                    ],
+                    [
+                        14.36549618,
+                        48.25761154
+                    ],
+                    [
+                        14.36546416,
+                        48.25765617
+                    ],
+                    [
+                        14.36543504,
+                        48.2576939
+                    ],
+                    [
+                        14.36540294,
+                        48.25773508
+                    ],
+                    [
+                        14.36537272,
+                        48.25778213
+                    ],
+                    [
+                        14.36534372,
+                        48.25781923
+                    ],
+                    [
+                        14.3653205,
+                        48.25784574
+                    ],
+                    [
+                        14.36530689,
+                        48.25786321
+                    ],
+                    [
+                        14.36521183,
+                        48.25798476
+                    ],
+                    [
+                        14.36514282,
+                        48.25806922
+                    ],
+                    [
+                        14.36508243,
+                        48.25814295
+                    ],
+                    [
+                        14.36500648,
+                        48.25820538
+                    ],
+                    [
+                        14.36483578,
+                        48.25827714
+                    ],
+                    [
+                        14.36462495,
+                        48.2583584
+                    ],
+                    [
+                        14.36443484,
+                        48.25842878
+                    ],
+                    [
+                        14.36431584,
+                        48.25847775
+                    ],
+                    [
+                        14.3642081,
+                        48.25851855
+                    ],
+                    [
+                        14.36411529,
+                        48.25855146
+                    ],
+                    [
+                        14.36395876,
+                        48.2586269
+                    ],
+                    [
+                        14.36389488,
+                        48.25867907
+                    ],
+                    [
+                        14.36383522,
+                        48.25875569
+                    ],
+                    [
+                        14.36382361,
+                        48.25883861
+                    ],
+                    [
+                        14.36382395,
+                        48.25886524
+                    ],
+                    [
+                        14.36383058,
+                        48.2595134
+                    ],
+                    [
+                        14.36383658,
+                        48.25960625
+                    ],
+                    [
+                        14.36386672,
+                        48.25969544
+                    ],
+                    [
+                        14.36388874,
+                        48.25973559
+                    ],
+                    [
+                        14.36398249,
+                        48.25986697
+                    ],
+                    [
+                        14.36407884,
+                        48.26000199
+                    ],
+                    [
+                        14.36422012,
+                        48.26020269
+                    ],
+                    [
+                        14.36423469,
+                        48.26022332
+                    ],
+                    [
+                        14.36433221,
+                        48.26036081
+                    ],
+                    [
+                        14.36438129,
+                        48.2604362
+                    ],
+                    [
+                        14.36449286,
+                        48.26059129
+                    ],
+                    [
+                        14.36452762,
+                        48.26063967
+                    ],
+                    [
+                        14.36463164,
+                        48.26080243
+                    ],
+                    [
+                        14.36466463,
+                        48.26093228
+                    ],
+                    [
+                        14.36465993,
+                        48.26119948
+                    ],
+                    [
+                        14.36465837,
+                        48.26162119
+                    ],
+                    [
+                        14.36460986,
+                        48.26177867
+                    ],
+                    [
+                        14.36457404,
+                        48.26185871
+                    ],
+                    [
+                        14.36455917,
+                        48.26191654
+                    ],
+                    [
+                        14.3645561,
+                        48.26195619
+                    ],
+                    [
+                        14.3645998,
+                        48.26198816
+                    ],
+                    [
+                        14.36469504,
+                        48.26202776
+                    ],
+                    [
+                        14.36482491,
+                        48.26206229
+                    ],
+                    [
+                        14.36500283,
+                        48.26209785
+                    ],
+                    [
+                        14.3653136,
+                        48.26217451
+                    ],
+                    [
+                        14.36555433,
+                        48.26225127
+                    ],
+                    [
+                        14.36560488,
+                        48.26227217
+                    ],
+                    [
+                        14.36561324,
+                        48.26231222
+                    ],
+                    [
+                        14.36558021,
+                        48.26246216
+                    ],
+                    [
+                        14.36558043,
+                        48.26255238
+                    ],
+                    [
+                        14.36560327,
+                        48.26263154
+                    ],
+                    [
+                        14.36570676,
+                        48.26278915
+                    ],
+                    [
+                        14.36584318,
+                        48.26305879
+                    ],
+                    [
+                        14.3659585,
+                        48.26345078
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 310997,
+                "KST": null,
+                "X_GK": null,
+                "Y_GK": null,
+                "code": "0214",
+                "name": "0214 - Weikerlseestraße",
+                "farbe": "#ffe599",
+                "maste": "",
+                "laenge": 822.51,
+                "neubau": false,
+                "VOLTAGE": null,
+                "bereich": "1",
+                "inaktiv": false,
+                "kontakt": null,
+                "praefix": "",
+                "primaer": "ZU-NM.0214 - Weikerlseestraße",
+                "erhalter": null,
+                "rueckbau": false,
+                "Fusspunkt": null,
+                "Masthoehe": null,
+                "bemerkung": "",
+                "uebergabe": false,
+                "wegsystem": null,
+                "Aenderungs": null,
+                "Klemmpunkt": null,
+                "Spitzhoehe": null,
+                "Winkelgrup": null,
+                "ausgefuehrt": false,
+                "eingereicht": false,
+                "rueckgebaut": false,
+                "zufahrtstyp": "Gemeindestraße",
                 "kategorie_id": [
                     270337
                 ],
