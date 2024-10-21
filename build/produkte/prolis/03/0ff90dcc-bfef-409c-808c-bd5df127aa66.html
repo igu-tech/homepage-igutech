@@ -34,11 +34,53 @@
   map.addControl(new maplibregl.ScaleControl({position: 'bottom-right'}));
 
   function addBaselayer() {
-    
-     map.addSource('nm', {
+
+
+	map.addSource('bf_nm', {
+      type: 'geojson',
+      data: 'bf_nm.geojson'
+    });    
+    map.addLayer({
+		"id": "bf_nm",
+			"type": "fill",
+			"paint": {
+				"fill-color": "rgba(255, 133, 133,1)",
+				"fill-opacity": 0.3,
+				"fill-antialias": true,
+				"fill-outline-color": "black"
+			},
+			"layout": {
+				"visibility": "visible"
+			},
+			"source": "bf_nm",
+			"minzoom": 14
+    });
+
+	map.addSource('bf_dm', {
+      type: 'geojson',
+      data: 'bf_dm.geojson'
+    });    
+    map.addLayer({
+		"id": "bf_dm",
+			"type": "fill",
+			"paint": {
+				"fill-color": "rgba(0, 0, 255,1)",
+				"fill-opacity": 0.3,
+				"fill-antialias": true,
+				"fill-outline-color": "black"
+			},
+			"layout": {
+				"visibility": "visible"
+			},
+			"source": "bf_dm",
+			"minzoom": 14
+    });
+
+
+    map.addSource('nm', {
       type: 'geojson',
       data: 'nm.geojson'
-    });    
+    });   
     map.addLayer({
 			"id": "nm",
 			"type": "circle",
@@ -106,7 +148,8 @@
 			"source": "dm",
 			"minzoom": 8
     });
-    
+
+ 
     map.addSource('zu', {
       type: 'geojson',
       data: 'zu.geojson'
