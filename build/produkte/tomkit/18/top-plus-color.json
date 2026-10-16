@@ -1,0 +1,29 @@
+{
+    "version": 8,
+    "id": "top-plus-color",
+    "name": "Top Plus color",
+    "sources": {
+        "basemap": {
+              "type": "raster",
+              "tiles": ["https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web/default/WEBMERCATOR/{z}/{y}/{x}.png"],
+              "tileSize": 256,
+              "maxzoom": 18
+        }
+    },
+    "layers": [
+        {
+            "id": "basemap",
+            "type": "raster",
+            "source": "basemap",
+            "minzoom": 0,
+            "maxzoom": 24,
+            "paint": {
+                "raster-opacity": 0.8
+            },
+            "layout": {
+                "visibility": "visible" 
+            }
+        }
+    ],
+    "glyphs": "https://service.igutech.com/glyphs/{fontstack}/{range}.pbf"
+}

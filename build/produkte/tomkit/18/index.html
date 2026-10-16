@@ -10,18 +10,23 @@
 </head>
 <body style="padding: 0; margin: 0;" >
 <div id="map" style="width: 100vw; height: 100vh" ></div>
-<div id="legend" style="position: absolute; top: 10px;left: 10px; background: hsla(0,0%,100%,.75); padding: 5px; font-family: Arial, sans-serif; font-size: 15px; border-radius: 3px;" ></div>
+<div style="position: absolute; top: 10px;left: 10px; background: hsla(0,0%,100%,.75); padding: 5px; font-family: Arial, sans-serif; font-size: 15px; border-radius: 3px;" >
+  <h3>Vortriebsstand Tunnel Kauerndorf:</h3>
+</div>
+<div id="legend" style="position: absolute; top: 50px;left: 10px; background: hsla(0,0%,100%,.75); padding: 5px; font-family: Arial, sans-serif; font-size: 15px; border-radius: 3px;" >
+</div>
 <script type="module">
   import * as maplibregl from './maplibre-gl.mjs';
   maplibregl.setWorkerUrl('./maplibre-gl-worker.mjs');
   var SERVER = 'https://www.tomkit.at'
+  //var SERVER = 'https://dev.igutech.com'
   /* global fetch maplibregl */
   var map = new maplibregl.Map({
     container: 'map',
-    style: 'de-basemap.json',
+    style: 'top-plus-color.json',
     maxZoom: 22,
     center: [11.504322297819414, 50.11914888686945], 
-    zoom: 16
+    zoom: 16.5
   });
   map.on('load', () => {
     addBaselayer();
