@@ -1,0 +1,29 @@
+{
+  "version": 8,
+  "id": "de-basemap",
+  "name": "Basemap Deutschland",
+  "sources": {
+      "basemap": {
+            "type": "raster",
+            "tiles": [
+              "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png"
+            ],            
+            "tileSize": 256,
+            "maxzoom": 19
+      }
+  },
+  "layers": [
+      {
+          "id": "de-basemap",
+          "type": "raster",
+          "source": "basemap",
+          "minzoom": 0,
+          "maxzoom": 24,
+          "layout": {
+              "visibility": "visible" 
+          }
+      }
+  ],
+  "glyphs": "https://service.igutech.com/glyphs/{fontstack}/{range}.pbf"
+
+}

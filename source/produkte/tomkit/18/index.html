@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Tunnel Kauerndorf - Lageplan</title>
+  <link rel="stylesheet" href="./maplibre-gl.css" />
+</head>
+<body style="padding: 0; margin: 0;" >
+<div id="map" style="width: 100vw; height: 100vh" ></div>
+<div id="legend" style="position: absolute; top: 10px;left: 10px; background: hsla(0,0%,100%,.75); padding: 5px; font-family: Arial, sans-serif; font-size: 15px; border-radius: 3px;" ></div>
+<script type="module">
+  import * as maplibregl from './maplibre-gl.mjs';
+  maplibregl.setWorkerUrl('./maplibre-gl-worker.mjs');
+  var SERVER = 'https://www.igutech.com'
+  /* global fetch maplibregl */
+  var map = new maplibregl.Map({
+    container: 'map',
+    style: 'de-basemap.json',
+    maxZoom: 22,
+    center: [11.504322297819414, 50.11914888686945], 
+    zoom: 16
+  });
+  map.on('load', () => {
+    addBaselayer();
+    addLayer();
+    addLegend();
+    map.resize(); 
+
+  });
+  map.addControl(new maplibregl.NavigationControl());
+  map.addControl(new maplibregl.ScaleControl({position: 'bottom-right'}));
+  map.addControl(new maplibregl.AttributionControl({customAttribution: '<a href="https://www.igutech.com/build/tomkit.html" target="blank">powered by TOMKIT</a>'}));
+
+  function addBaselayer() {
+    map.addSource('tunnelbau', {
+      type: 'geojson',
+      data: './tunnelbau.geojson'
+    });
+    map.addSource('strassenbau', {
+      type: 'geojson',
+      data: 'strassenbau.geojson'
+    });
+    map.addLayer({
+      'id': 'tunnelbau',
+      'type': 'line',
+      'source': 'tunnelbau',
+      'paint': {
+        'line-width': 1,
+        'line-color': '#fc6f95'
+      }
+    });
+    map.addLayer({
+      'id': 'strassenbau',
+      'type': 'line',
+      'source': 'strassenbau',
+      'paint': {
+        'line-width': 1,
+        'line-color': '#fc6f95'
+      }
+    });
+    map.addSource('achse', {
+      type: 'geojson',
+      data: 'achse.geojson'
+    });
+    map.addLayer({
+      'id': 'achse',
+      'type': 'line',
+      'source': 'achse',
+      'paint': {
+        'line-width': 10,
+        'line-color': '#1E90FF'
+      },
+      'layout': {
+        'line-cap': 'round'
+      }
+    });
+  }
+
+  function addLayer() {
+    fetch(SERVER + '/tomkit/api/sharing/public/baufortschritt?projektnummer=dbb4c7ef-9370-44d9-b320-82e0c84680df&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=3600')
+      .then(res => {
+        res.json()
+          .then(data => {
+            var geojson = {"type": "FeatureCollection","features": []};
+            data.forEach(feature => {
+              feature.type ='Feature';
+              feature.geometry = feature.geom;
+              delete feature['geom'];
+              geojson.features.push(feature);
+            });
+            map.addSource('baufortschritt', {
+              type: 'geojson',
+              data: geojson
+            });
+            map.addLayer({
+              'id': 'baufortschritt',
+              'type': 'line',
+              'source': 'baufortschritt',
+              'paint': {
+                'line-width': 10,
+                'line-color': '#32CD32'
+              },
+              'layout': {
+                'line-cap': 'round'
+              }              
+            });
+          });
+      })
+      .catch(err => {
+        console.log(err.description);
+      });
+  }
+  
+  function addLegend() {
+    fetch(SERVER + '/tomkit/api/sharing/public/version?projektnummer=dbb4c7ef-9370-44d9-b320-82e0c84680df&fachschale=geo&guid=29a5e1f6-84f3-470d-985f-87fe625f9233&cache=3600')
+      .then(res => {
+        res.json()
+          .then(data => {
+            if (data && data.length) {
+              document.getElementById('legend').innerHTML = 'letzte Aktualisierung: ' + data[0].version;
+            }
+          });
+      })
+      .catch(err => {
+        console.log(err.description);
+      });
+  }
+</script>
+
+</body>
+</html>
